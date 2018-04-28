@@ -44,7 +44,13 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
-    pageTitle: 'About Page',
+    pageTitle: 'About Page'
+  });
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Portfolio Page'
   });
 });
 
@@ -55,5 +61,5 @@ app.get('/bad', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log('PrazeNode successfully run on port ${port}');
+  console.log(`PrazeNode successfully run on port ${port}`);
 });
