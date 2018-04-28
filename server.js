@@ -55,5 +55,5 @@ app.get('/bad', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log('PrazeNode successfully run on port 3000');
+  console.log('PrazeNode successfully run on port ${port}');
 });
